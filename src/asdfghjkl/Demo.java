@@ -1,72 +1,19 @@
 package asdfghjkl;
-//OOPS
-// inheritance , ploymor 1) over laod / overrding
-//, encap abst
-// same name of a method with diff parameter
-// with in the class
 
+import java.util.Scanner;
 
-public class Demo {	   
-	 void add(String s)
-	 {
-		 System.out.println(" 1aat");
-	 }
-	 void add(int a, int b)
-	 {
-		 System.out.println("2nd");
-	 }
-	 public static void main	(String[] args) {
-		Demo  tt = new Demo();
-		tt.add(2, 3);
-		tt.add("asdfasdf");
-		
-	}
-}---------------------------------
+public class Demo {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-package asdfghjkl;
+        System.out.print("Enter your name: ");
+        String name = scanner.nextLine();
 
-//OOPS
-// inheritance , ploymor 1) over laod / overrding
-//, encap abst
-// same name of a method with diff parameter
-// with in the class
-class Parent {
-	void cancer() {
-		System.out.println(" dsfsdf");
-	}
-}
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt();
 
-public class Demo extends Parent{	   
-	 public static void main	(String[] args) {
-		Demo  tt = new Demo();
-	  tt.cancer();
-	}
-}
+        System.out.println("\nHello " + name + ", you are " + age + " years old!");
 
-------------------------
-package asdfghjkl;
-
-//OOPS
-// inheritance , ploymor 1) over laod / overrding
-//, encap abst
-// same name of a method with diff parameter
-// with in the class
-class Parent {
-	void proprty()
-	{
-		System.out.println("propoerty ");
-	}
-	void marry()
-	{
-		System.out.println("family girl / boy");
-	}}
-public class Demo extends Parent{	   
-	void marry()
-	{
-		System.out.println("campus selection girl / boy");
-	}
-	public static void main	(String[] args) {
-		Demo  tt = new Demo();
-		tt.marry();
-		tt.proprty();}
+        scanner.close();
+    }
 }
